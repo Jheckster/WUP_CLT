@@ -107,7 +107,7 @@ p + ggtitle("n = 9") +
 print(paste('mean = ', mean(my1000$k9),' sd = ',sd(my1000$k9)))
 
 ```
-
+  
 The Sd is  equal to 13.8025596482342
 
 
@@ -131,7 +131,35 @@ p + ggtitle("n = 16") +
 print(paste('mean = ', mean(my1000$k16),' sd = ',sd(my1000$k16)))
 
 ```
-
+  
 The Sd is equal to 10.5066851558982.
+
+
+```{r}
+numb = 25
+Hdata = Homers_data[sample(1:1000,size=numb*1000, replace=T),"kkardashtemp"]
+mdata  <-matrix(Hdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+my1000$k25 = x.avg
+
+
+p <- ggplot(my1000, aes(x=k25),col=sex) + 
+  geom_density() +
+
+# Add mean line
+ geom_vline(aes(xintercept=mean(k16)),
+            color="blue", linetype="dashed", size=1)
+p + ggtitle("n = 25") +
+  xlab("temperature") + ylab(" density")
+
+print(paste('mean = ', mean(my1000$k25),' sd = ',sd(my1000$k25)))
+
+```
+  
+
+The Sd is equal to 8.41664207774018
+
+  
+
 
 

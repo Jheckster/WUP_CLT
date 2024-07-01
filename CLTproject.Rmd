@@ -108,7 +108,7 @@ print(paste('mean = ', mean(my1000$k9),' sd = ',sd(my1000$k9)))
 
 ```
   
-The Sd is  equal to 13.8025596482342
+The Standard deviation is equal to 13.7357685621269
 
 
 ```{r}
@@ -132,7 +132,7 @@ print(paste('mean = ', mean(my1000$k16),' sd = ',sd(my1000$k16)))
 
 ```
   
-The Sd is equal to 10.5066851558982.
+The Standard deviation is equal to 10.5170146795393.
 
 
 ```{r}
@@ -157,7 +157,7 @@ print(paste('mean = ', mean(my1000$k25),' sd = ',sd(my1000$k25)))
 ```
   
 
-The Sd is equal to 8.41664207774018
+The Standard deviation is equal to 8.56791782957413
 
   
 ```{r}
@@ -181,7 +181,7 @@ print(paste('mean = ', mean(my1000$k36),' sd = ',sd(my1000$k36)))
 
 ```
   
-The Sd is equal to 6.73518158541768
+The Standard deviation is equal to 6.83489039429387
 
 
 
